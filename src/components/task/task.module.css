@@ -1,0 +1,65 @@
+.todoTask {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.2rem;
+	background: linear-gradient(135deg, #d9c2ff69 0%, #fed8a088 100%);
+	border-radius: 12px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease;
+}
+
+.todoTask:hover {
+	transform: translateX(5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.label {
+	flex: 1;
+	font-size: 1.5rem;
+	color: #495057;
+	transition: all 0.3s ease;
+
+	/* Разрешаем перенос по словам и «ломаем» очень длинные слова */
+	white-space: normal;
+	overflow-wrap: break-word;
+	word-break: break-word; /* на всякий случай для старых браузеров */
+}
+
+.delBtn {
+	font-size: 1.5rem;
+	font-weight: 100;
+	padding: 1rem;
+	border-radius: 8px;
+	background: rgba(154, 62, 62, 0.85);
+	color: #f6f6f6;
+}
+
+.delBtn:hover {
+	background: rgba(95, 31, 31, 0.772);
+}
+
+.delBtn:disabled {
+	background: rgb(66, 16, 16);
+}
+
+.homeBtn {
+	display: block;
+	margin: 0 auto 12px; /* сверху/снизу: 0 и 12px, слева/справа: auto */
+	font-size: 1.5rem;
+	font-weight: 100;
+	padding: 1rem;
+	border-radius: 8px;
+	background: rgba(16, 32, 126, 0.418);
+	color: #f6f6f6;
+}
+
+.homeBtn:hover {
+	background: rgba(3, 18, 105, 0.507);
+}

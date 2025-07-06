@@ -1,0 +1,29 @@
+.err404 {
+	display: flex;
+	flex-direction: column; /* вертикальное расположение элементов */
+	justify-content: center; /* по вертикали центр */
+	align-items: center; /* по горизонтали центр */
+	height: 100vh;
+	text-align: center;
+	gap: 2rem; /* отступ между текстом и кнопкой */
+}
+
+.p {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.homeBtn {
+	display: block;
+	margin: 0 auto 12px; /* сверху/снизу: 0 и 12px, слева/справа: auto */
+	font-size: 1.5rem;
+	font-weight: 100;
+	padding: 1rem;
+	border-radius: 8px;
+	background: rgba(16, 32, 126, 0.418);
+	color: #f6f6f6;
+}
+
+.homeBtn:hover {
+	background: rgba(3, 18, 105, 0.507);
+}
