@@ -8,7 +8,7 @@ export const loading = (operationType, operationStatus) => ({
 		status: operationStatus,
 	},
 });
-// Loading(TASK_OPERATIONS.ADD, STATUS_OPERATIONS.FALSE);
+// loading(TASK_OPERATIONS.ADD, STATUS_OPERATIONS.FALSE);
 
 export const setTasks = (tasks) => ({
 	type: taskReduceTypes.SET_TASKS,
